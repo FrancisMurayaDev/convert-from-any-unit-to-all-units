@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="main-container">
     <header class="heading">
       <h1>
         CONVERT FROM ANY UNIT TO ALL UNITS
@@ -15,17 +15,19 @@
     </header>
 
     <form action="">
-      <input type="number">
-      <select>
-        <option>--Base Unit--</option>
-        <option>Millimeters</option>
-        <option>Centimeters</option>
-        <option>Decimeters</option>
-        <option>Meters</option>
-        <option>Dekameter</option>
-        <option>Hectometer</option>
-        <option>Kilometer</option>
+      <input type="number" placeholder="value" required>
+      <select for="convert" required>
+        <option value="">--Base Unit--</option>
+        <option value="">Millimeters</option>
+        <option value="">Centimeters</option>
+        <option value="">Decimeters</option>
+        <option value="">Meters</option>
+        <option value="">Dekameter</option>
+        <option value="">Hectometer</option>
+        <option value="">Kilometer</option>
       </select>
+
+      <button>convert</button>
     </form>
   </div>
 
