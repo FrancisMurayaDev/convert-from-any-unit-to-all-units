@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To any Unit Converter</title>
   <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="parent">
   <div class="main-container">
     <header class="heading">
       <h1>
@@ -14,22 +18,34 @@
       </h1>
     </header>
 
-    <form action="">
-      <input type="number" placeholder="value" required>
-      <select for="convert" required>
+    <div class="form-div" action="">
+      <input type="number" placeholder="value" id="number" required>
+      <select class="unit-select" for="convert" id="unit" required>
         <option value="">--Base Unit--</option>
-        <option value="">Millimeters</option>
-        <option value="">Centimeters</option>
-        <option value="">Decimeters</option>
-        <option value="">Meters</option>
-        <option value="">Dekameter</option>
-        <option value="">Hectometer</option>
-        <option value="">Kilometer</option>
+        <option value="mm">Millimeters</option>
+        <option value="cm">Centimeters</option>
+        <option value="dm">Decimeters</option>
+        <option value="m">Meters</option>
+        <option value="Dm">Dekameter</option>
+        <option value="Hm">Hectometer</option>
+        <option value="Km">Kilometer</option>
       </select>
 
-      <button>convert</button>
-    </form>
+      <button class="button">convert</button>
+
+      
+    <div id="text-paragraph">
+      <p id="error-content"></p>
+    </div>
+    </div>
+
+
+   
   </div>
+  <div class="result-display">
+    <p id="results"></p>
+  </div>
+</div>
 
   <script src="./src/main.js"></script>
 </body>
