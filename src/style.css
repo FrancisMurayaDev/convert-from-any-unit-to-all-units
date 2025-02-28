@@ -1,6 +1,9 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.parent{
+  height: 100vh;
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -14,13 +17,14 @@ h1 {
 }
 
 input, select, button {
-  padding: 1rem 0.5rem;
+  padding: 0.8rem 0.5rem;
   border-radius: 5px;
   border: none;
 }
 
 input {
   min-width: 13rem; 
+  margin-right: 0.5rem;
 }
 
 input[placeholder] {
@@ -28,7 +32,56 @@ input[placeholder] {
   font-size: 1.1rem;
 }
 
-form {
+.form-div {
   margin-bottom: 4rem;
 }
+
+select, option {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  margin-left: 0.3rem;
+
+}
+.result-display{
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: 900;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.connector {
+  font-weight: 100;
+
+}
+
+#text-paragraph {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#error-content {
+  text-align: center;
+  font-weight: 1rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-weight: 1.3rem;
+}
+
+
 
